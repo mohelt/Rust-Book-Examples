@@ -56,4 +56,63 @@ let months = ["January", "February", "March", "April", "May", "June", "July",
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 let first = a[0];
 
+Parameters?
+fn another_function(x: i32) {
+    println!("The value of x is: {}", x);
+}
+
+//What is a statement?
+//Statements are instructions that perform some action and do not return a value. Expressions evaluate to a resulting value. Let’s look at some examples.Statements do not return values.
+
+//Return values?
+fn five() -> i32 {
+    5
+}
+
+//Comments?
+//hello world
+
+//If statements?
+   let number = 3;
+    if number < 5 {
+        println!("condition was true");
+    } else {
+        println!("condition was false");
+    }
+
+//Elseif?
+let number = 6;
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
+
+//If in a let statement?
+let number = if condition { 5 } else { 6 };
+
+//Loop?
+//The loop keyword tells Rust to execute a block of code over and over again forever or until you explicitly tell it to stop
+  loop {
+        println!("again!");
+    }
+
+//Break out of loop?
+//Break
+
+//While loop?
+   while number != 0 {
+        println!("{}!", number);
+        number -= 1;
+    }
+
+//For loop?
+   for element in a {
+        println!("the value is: {}", element);
+    }
+
 }
